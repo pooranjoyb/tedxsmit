@@ -19,20 +19,20 @@ export default function ParticleBackground() {
             options={{
                 particles: {
                     number: {
-                        value: 80,
+                        value: 100,
                         density: {
                             enable: true,
                             value_area: 800
                         }
                     },
                     color: {
-                        value: "#ffffff"
+                        value: "#ff0000"
                     },
                     shape: {
                         type: "circle",
                         stroke: {
                             width: 1,
-                            color: "#000000"
+                            color: "#ff0000"
                         },
                         polygon: {
                             nb_sides: 5
@@ -53,21 +53,21 @@ export default function ParticleBackground() {
                         random: true,
                         anim: {
                             enable: false,
-                            speed: 46.256847230675625,
+                            speed: 10.256847230675625,
                             size_min: 0.1,
                             sync: false
                         }
                     },
                     line_linked: {
                         enable: true,
-                        distance: 150,
+                        distance: 40,
                         color: "#ffffff",
                         opacity: 0.4,
                         width: 1
                     },
                     move: {
                         enable: true,
-                        speed: 2,
+                        speed: 1,
                         direction: "none",
                         random: false,
                         straight: false,
@@ -95,7 +95,7 @@ export default function ParticleBackground() {
                     },
                     modes: {
                         grab: {
-                            distance: 200,
+                            distance: 100,
                             line_linked: {
                                 opacity: 1
                             }
