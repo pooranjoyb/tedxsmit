@@ -1,8 +1,8 @@
-import Screen from "./Components/Screen"
-import Home from "./Components/Home"
+import Screen from "./Components/Screen";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
 import About from "./Components/About"
 function App() {
-
   return (
     <>
       <Screen/>
@@ -11,7 +11,7 @@ function App() {
         <About />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
