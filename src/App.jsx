@@ -5,9 +5,10 @@ import About from "./Components/About"
 function App() {
   return (
     <>
-      <Screen/>
-      <Home />
+      <Navbar />
+      <Screen />
       <div className="content">
+        <Home />
         <About />
       </div>
     </>

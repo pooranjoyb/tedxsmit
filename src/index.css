@@ -22,6 +22,11 @@ body {
   min-height: 100vh;
 }
 
-/* .content{
-  margin-top: 20rem;
-} */
+#tsparticles{
+  z-index: 0;
+}
+
+#navbar, .content{
+  position: relative;
+  z-index: 10;
+}

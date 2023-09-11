@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white bg-black">
+    <div id="navbar" className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white bg-black">
       <img src={logo} alt="Logo" className="w-40 h-12" />
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
+        <a href=""><li className="p-4">Home</li></a>
         <li className="p-4">Theme</li>
         <li className="p-4">Ticket & Merch</li>
         <li className="p-4">About</li>
