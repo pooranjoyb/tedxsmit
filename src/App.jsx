@@ -1,10 +1,10 @@
-import Background from "./Components/Background"
+import Home from "./Components/Home"
 
 function App() {
 
   return (
     <>
-      <Background/>
+      <Home/>
     </>
   )
 }
