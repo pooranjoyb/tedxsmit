@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../img/logo.png";
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white bg-black">
       <img src={logo} alt="Logo" className="w-40 h-12" />
       <ul className="hidden md:flex">
         <li className="p-4">Home</li>
@@ -24,7 +24,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-black ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >

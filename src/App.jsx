@@ -1,15 +1,18 @@
-import Screen from "./Components/Screen"
-import Home from "./Components/Home"
-function App() {
+import Screen from "./Components/Screen";
+import Home from "./Components/Home";
 
+import Navbar from "./Components/Navbar";
+
+function App() {
   return (
     <>
+      <Navbar />
       <div className="background">
         <Screen />
-        <Home/>
+        <Home />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
