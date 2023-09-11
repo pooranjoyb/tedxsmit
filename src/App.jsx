@@ -1,12 +1,14 @@
 import Screen from "./Components/Screen"
 import Home from "./Components/Home"
+import About from "./Components/About"
 function App() {
 
   return (
     <>
-      <div className="background">
-        <Screen />
-        <Home/>
+      <Screen/>
+      <Home />
+      <div className="content">
+        <About />
       </div>
     </>
   )
