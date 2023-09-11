@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About"
 import Gallery from './Components/Gallery'
+import TicketMerch from "./Components/TicketMerch";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <div className="flex w-full items-center justify-center my-[3rem]">
           <Gallery />
         </div>
+        <TicketMerch />
       </div>
     </>
   );
