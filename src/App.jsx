@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About"
 import Gallery from './Components/Gallery'
 import TicketMerch from "./Components/TicketMerch";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Gallery />
         </div>
         <TicketMerch />
+        <Footer />
       </div>
     </>
   );

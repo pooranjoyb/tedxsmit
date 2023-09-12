@@ -2,12 +2,12 @@ import tshirt from "../img/tshirt.jpeg";
 const TicketMerch = () => {
   return (
     <>
-      <div>
-        PRIME MERCHANDISE
+      <div id="glass" className="w-full py-5 px-4">
+      <div className="text-4xl font-bold text-center my-[3rem]">
+        PRIME <span className="text-[#EB0028]">MERCHANDISE</span>
       </div>
 
 
-      <div id="glass" className="w-full py-16 px-4">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
           <img className="w-[500px] mx-auto my-4" src={tshirt} alt="/" />
           <div className="flex flex-col justify-center">
