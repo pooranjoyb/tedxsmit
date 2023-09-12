@@ -4,19 +4,19 @@ import { Typography } from "@material-tailwind/react";
 export default function Footer() {
     const LINKS = [
       {
-        title: "Team",
-        items: ["Home","About Us", "Contact", "Theme"],
+        title: "Contact Information",
+        items: [" "," ","Aryan Lohia","+91-8617687840", "Namarata Parbat", "+91-9874281819"],
       },
       {
-        title: "Resource",
-        items: ["Tickets", "Gallery", "Merch", "Help Center"],
+        title: "Resources",
+        items: ["Home","About", "Gallery", "Tickets & Merch", "Contact"],
       },
     ];
      
     const currentYear = new Date().getFullYear();
   return (
     <>
-     <footer className="relative w-full my-10 text-white">
+     <footer id='contact' className="relative w-full my-10 text-white">
        <div className="mx-auto w-full max-w-7xl px-8">
          <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2 ">
             <img src="./assets/x_logo.png" alt="" width={300}/>
