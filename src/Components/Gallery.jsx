@@ -19,6 +19,11 @@ export default function CarouselCustomNavigation() {
       )}
     >
       <img
+        src="./gallery/tedx2019.png"
+        alt="image 1"
+        className="h-full w-full object-cover"
+      />
+      <img
         src="./gallery/1.jpg"
         alt="image 1"
         className="h-full w-full object-cover"
