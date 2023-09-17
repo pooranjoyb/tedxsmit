@@ -5,24 +5,29 @@ export default function Footer() {
     const LINKS = [
       {
         title: "Contact Information",
-        items: [" "," ","Aryan Lohia","+91-8617687840", "Namarata Parbat", "+91-9874281819"],
+        items: [" "," ","Aryan Lohia","+91-8617687840", "Namrata Parbat", "+91-9874281819"],
       },
       {
         title: "Resources",
-        items: ["Home","About", "Gallery", "Tickets & Merch", "Contact"],
+        items: ["Home", "About", "Gallery", "Tickets", "Merch"],
       },
     ];
+
+    const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+  };
      
     const currentYear = new Date().getFullYear();
   return (
     <>
      <footer id='contact' className="relative w-full my-10 text-white">
        <div className="mx-auto w-full max-w-7xl px-8">
-         <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2 ">
+         <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2 mini:justify-center mini:items-center mini:flex mini:flex-col">
             <img src="./assets/x_logo.png" alt="" width={300}/>
            <div className="grid grid-cols-2 justify-between gap-4">
-             {LINKS.map(({ title, items }) => (
-               <ul key={title}>
+             {LINKS.map(({ title, items}) => (
+               <ul key={title} className='text-center'>
                  <Typography
                    color='red'
                    className="mb-3 font-bold"
@@ -30,11 +35,12 @@ export default function Footer() {
                    {title}
                  </Typography>
                  {items.map((link) => (
-                   <li key={link}>
+                   <li key={link} >
                      <Typography
                        as="a"
                        href="#"
                        className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                       onClick={() => scrollToSection(link.toLowerCase())}
                      >
                        {link}
                      </Typography>
@@ -44,12 +50,12 @@ export default function Footer() {
              ))}
            </div>
          </div>
-         <div className="mt-12 flex w-full flex-col items-end  border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+         <div className="mt-12 flex w-full flex-col items-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
            <Typography
              variant="small"
              className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
            >
-             &copy; {currentYear} TedxSMIT. All
+             &copy; {currentYear} TEDxSMIT. All
              Rights Reserved.
              <br />
             Developed by Adi.S & Pooranjoy.B
