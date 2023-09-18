@@ -2,6 +2,11 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function CarouselCustomNavigation() {
   return (
+    <>
+    <div className="flex flex-col justify-center items-center">
+    <div className="text-4xl font-bold text-center my-[3rem]">
+        OUR <span className="text-[#EB0028]">GALLERY</span>
+      </div>
     <Carousel
       className="rounded-xl w-3/5 mini:w-4/5"
       navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -44,5 +49,7 @@ export default function CarouselCustomNavigation() {
         className="h-full w-full object-cover"
       />
     </Carousel>
+    </div>
+    </>
   );
 }
