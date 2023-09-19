@@ -28,7 +28,7 @@ TEDxSMIT is an independently organized TED event that brings together innovative
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/TEDxSMIT-Website.git
+git clone https://github.com/pooranjoyb/tedxsmit.git
 ```
 2. Install Dependencies
 Navigate to the project directory:
