@@ -15,11 +15,11 @@ function App() {
       <Home />
       <div className="content">
         <About />
-          <Speakers />
+        <Speakers />
+        <TicketMerch />
         <div className="flex w-full items-center justify-center my-[3rem]">
           <Gallery />
         </div>
-        <TicketMerch />
         <Footer />
       </div>
     </>

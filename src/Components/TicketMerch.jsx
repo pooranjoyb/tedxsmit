@@ -2,6 +2,20 @@ const TicketMerch = () => {
   return (
     <>
       <div className="glass">
+      <div id="tickets" className="w-full py-5 px-4">
+          <div className="text-4xl font-bold text-center my-[3rem]">
+            GRAB YOUR <span className="text-[#EB0028]">TICKETS</span>
+
+          </div>
+          <a href="https://forms.gle/qe6o3XTjj3mzCnwA9" target="_blank"><div className="wrapper">
+            <img src="./assets/ticket.jpg" alt="" className="w-[30rem]" />
+            <img className="w-[30rem]" src="./assets/ticket.jpg" alt="" />
+            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
+            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
+            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
+          </div>
+          </a>
+        </div>
         <div id="merch" className=" w-full py-5 px-4">
           <div className="text-4xl font-bold text-center my-[3rem]">
             PRIME <span className="text-[#EB0028]">MERCHANDISE</span>
@@ -30,20 +44,7 @@ const TicketMerch = () => {
             </div>
           </div>
         </div>
-        <div id="tickets" className="w-full py-5 px-4">
-          <div className="text-4xl font-bold text-center my-[3rem]">
-            GRAB YOUR <span className="text-[#EB0028]">TICKETS</span>
 
-          </div>
-          <a href=""><div className="wrapper">
-            <img src="./assets/ticket.jpg" alt="" className="w-[30rem]" />
-            <img className="w-[30rem]" src="./assets/ticket.jpg" alt="" />
-            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
-            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
-            <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
-          </div>
-          </a>
-        </div>
       </div>
     </>
   );

@@ -6,24 +6,28 @@ export default function Speakers() {
             id: 1,
             name: "Mr. Ishaan Sharma",
             role: "Youtuber & Entrepreneur",
+            desc: "1M+ Subscribers",
             img: "./assets/ishaan.png"
         },
         {
             id: 2,
             name: "Mr. Kunzang Topgay Bhutia",
             role: "Rubaru Mr. India 2022",
+            desc: "",
             img: "./assets/kunzang.png"
         },
         {
             id: 3,
-            name: "Ashish Mishra",
-            role: "Project Director (Chandrayaan 3)",
+            name: "Mr. Ashish Mishra",
+            role: "Deputy Project Director",
+            desc: "Chandrayaan 3",
             img: "./assets/mishra.png"
         },
         {
             id: 4,
-            name: "Antara Nandy",
+            name: "Ms. Antara Nandy",
             role: "Playback Singer",
+            desc: "Part of the group Nandy Sisters",
             img: "./assets/antara.png"
         }
     ]
@@ -38,13 +42,14 @@ export default function Speakers() {
                         </p>
                     </div>
                     <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-                        {speakers.map(({ id, name, role, img }) => (
+                        {speakers.map(({ id, name, role, desc, img }) => (
                             <li key={id}>
                                 <div className="flex items-center gap-x-6">
                                     <img className="h-28 w-28 rounded-full" src={img} alt="" />
                                     <div>
                                         <h3 className="text-xl font-black leading-7 tracking-tight text-[#EB0028]">{name}</h3>
                                         <p className="text-sm font-semibold leading-6 text-white">{role}</p>
+                                        <p className="text-sm font-semibold leading-6 text-white">{desc}</p>
                                     </div>
                                 </div>
                             </li>
