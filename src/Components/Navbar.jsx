@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
@@ -11,6 +11,22 @@ const Navbar = () => {
   const closeNav = () => {
     setNav(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      const scrollPercentage = (scrollY / document.body.scrollHeight) * 100;
+
+      if (scrollPercentage >= 12)
+        setNav(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div id="navbar" className=" z-50 flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white bg-black">
@@ -34,13 +50,13 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center justify-center" >
           <img src="./assets/logo.png" alt="Logo" className="w-40 h-12" />
-        <div className="flex flex-row">
-          <li className="p-2" onClick={closeNav}>Home</li>
-          <li className="p-2" onClick={closeNav}><a href='#about'>About</a></li>
-          <li className="p-2" onClick={closeNav}><a href="#tickets">Tickets</a></li>
-          <li className="p-2" onClick={closeNav}><a href="#merch">Merch</a></li>
-          <li className="p-2" onClick={closeNav}><a href="#contact">Contact</a></li>
-        </div>
+          <div className="flex flex-row">
+            <li className="p-2" onClick={closeNav}>Home</li>
+            <li className="p-2" onClick={closeNav}><a href='#about'>About</a></li>
+            <li className="p-2" onClick={closeNav}><a href="#tickets">Tickets</a></li>
+            <li className="p-2" onClick={closeNav}><a href="#merch">Merch</a></li>
+            <li className="p-2" onClick={closeNav}><a href="#contact">Contact</a></li>
+          </div>
         </div>
       </ul>
     </div>

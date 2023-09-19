@@ -6,7 +6,7 @@ export default function Footer() {
   const LINKS = [
     {
       title: "Contact Information",
-      items: [" ", " ", "Aryan Lohia", "+91-8617687840", "Namrata Parbat", "+91-9874281819"],
+      items: ["Aryan Lohia", "+91-8617687840", "Namrata Parbat", "+91-9874281819"],
     },
   ];
 
@@ -34,8 +34,6 @@ export default function Footer() {
                   {items.map((link) => (
                     <li key={link} >
                       <Typography
-                        as="a"
-                        href="#"
                         className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                         onClick={() => scrollToSection(link.toLowerCase())}
                       >
@@ -45,12 +43,12 @@ export default function Footer() {
                   ))}
                 </ul>
               ))}
-              <ul className="flex flex-col">
+              <ul className="flex flex-col text-center">
               <Typography
                     color='red'
                     className="mb-3 font-bold"
                   >
-                    Navbar
+                    Resources
                   </Typography>
                 <Link to='/'><li className="py-1.5">Home</li></Link>
                 <a href='#about'><li className="py-1.5">About</li></a>
