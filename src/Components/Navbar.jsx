@@ -18,8 +18,8 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <Link to='/'><li className="p-4">Home</li></Link>
         <a href='#about'><li className="p-4">About</li></a>
-        <a href="#"><li className="p-4">Tickets</li></a>
-        <a href="#tickets"><li className="p-4">Merch</li></a>
+        <a href="#tickets"><li className="p-4">Tickets</li></a>
+        <a href="#merch"><li className="p-4">Merch</li></a>
         <a href="#contact"><li className="p-4">Contact</li></a>
       </ul>
       <div onClick={handleNav} className="block md:hidden z-10 px-4">
@@ -28,7 +28,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed bottom-8 top-0 w-[100%] h-[10%] border-r border-r-gray-900 bg-black ease-in-out duration-500"
+            ? "fixed bottom-8 top-[0%] w-[100%] h-[10%] border-r border-r-gray-900 bg-black ease-in-out duration-500"
             : "ease-in-out duration-500 fixed top-[-100%]"
         }
       >
@@ -38,7 +38,7 @@ const Navbar = () => {
           <li className="p-2" onClick={closeNav}>Home</li>
           <li className="p-2" onClick={closeNav}><a href='#about'>About</a></li>
           <li className="p-2" onClick={closeNav}><a href="#tickets">Tickets</a></li>
-          <li className="p-2" onClick={closeNav}><a href="#tickets">Merch</a></li>
+          <li className="p-2" onClick={closeNav}><a href="#merch">Merch</a></li>
           <li className="p-2" onClick={closeNav}><a href="#contact">Contact</a></li>
         </div>
         </div>

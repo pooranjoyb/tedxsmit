@@ -3,8 +3,8 @@ import React from 'react'
 export default function About() {
     return (
         <>
-            <div id='about' className='glass2 flex-auto flex-col items-center justify-center  w-full text-center w-3/5 mini:text-sm'>
-                <img className='inline-block p-5' src="./assets/rising.png" width={500} />
+            <div id='about' className='glass2 flex-auto flex-col items-center justify-center  w-full text-center mini:text-sm'>
+            <h2 className="text-3xl font-bold tracking-widest text-white sm:text-4xl">RISING <span className='text-[#EB0028]'>ABOVE</span> RANGES</h2>
                 <div className='md:mx-[12rem] my-5 text-center font-sm mini:text-sm mini:mx-6'>
                     Centered around the theme "Rising Above Ranges" for the 6th Edition of TEDxSMIT 2023, our objective is to cultivate a
                     mindset that transcends the barriers obstructing progress. Through this, we aspire to navigate towards a future that is not

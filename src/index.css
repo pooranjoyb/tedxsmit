@@ -48,3 +48,22 @@ body {
 .glass2{
   padding: 3rem 0 3rem 0;
 }
+
+.wrapper{
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper img{
+  padding: 0 2rem 0 2rem;
+  animation: marquee 6000ms linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform:  translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
