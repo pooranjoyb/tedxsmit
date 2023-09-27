@@ -20,8 +20,8 @@ export default function Footer() {
     <>
       <footer id='contact' className="relative w-full my-10 text-white">
         <div className="mx-auto w-full max-w-7xl px-8">
-          <div className="grid grid-cols-1 justify-between items-center gap-4 md:grid-cols-2 mini:justify-center mini:items-center mini:flex mini:flex-col">
-            <img src="./assets/x_logo.png" alt="" width={300} />
+          <div className="flex justify-between items-center gap-4  mini:justify-center mini:items-center mini:flex mini:flex-col">
+            <img src="./assets/x_logo.png" alt="TEDxSMIT Logo" width={300} />
             <div className="grid grid-cols-2 justify-between gap-4">
               {LINKS.map(({ title, items }) => (
                 <ul key={title} className='text-center'>

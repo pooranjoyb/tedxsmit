@@ -7,7 +7,7 @@ const TicketMerch = () => {
             GRAB YOUR <span className="text-[#EB0028]">TICKETS</span>
 
           </div>
-          <a href="https://forms.gle/qe6o3XTjj3mzCnwA9" target="_blank"><div className="wrapper">
+          <a href="https://tedxsmit.com/tickets" target="_blank"><div className="wrapper">
             <img src="./assets/ticket.jpg" alt="" className="w-[30rem]" />
             <img className="w-[30rem]" src="./assets/ticket.jpg" alt="" />
             <img src="./assets/ticket.jpg" className="w-[30rem]" alt="" />
